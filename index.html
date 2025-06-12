@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="styles.css" />
+        <style>
+            /* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: 'Segoe UI', sans-serif;
+  height: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: url('https://source.unsplash.com/1600x900/?nature,water') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-content {
+  color: white;
+  text-align: center;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 10px;
+} 
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 25px;
+  background-color: #ffcc00;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e6b800;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: absolute;
+    right: 10%;
+    top: 70px;
+    display: none;
+  }
+
+  .navbar.active .nav-links {
+    display: flex;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+}
+
+        </style>
+    </head>
+    <body>
+        <header class="navbar">
+    <div class="logo">ARISE</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="https://lekh06.github.io/Landing-Page/">Home</a></li>
+        <li><a href="https://lekh06.github.io/login/">sing  in</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content"> 
+      <h1>Welcome to ARISE</h1>
+      <p>Your journey begins here.</p>
+      <a href="#"class="cta-button">Get Started</a>
+    </div>
+  </section>
+     
+    </body>
+</html>
